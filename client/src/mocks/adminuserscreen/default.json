@@ -1,0 +1,34 @@
+{
+  "email": [
+    {
+      "from": "Anna Gonzalez",
+      "subject": "Lorem ipsum dolor sit amet",
+      "text": "Ut enim ad minim nulla pariatur veniam",
+      "time": "8:44pm"
+    },
+    {
+      "from": "Carrie Jones",
+      "subject": "onsectetur adipiscing elit",
+      "text": "quis nostrud exercitation ullamco laboris",
+      "time": "4:34pm"
+    },
+    {
+      "from": "Maurice Walker",
+      "subject": "sed do eiusmod tempor",
+      "text": "nisi ut aliquip ex ea commodo consequat",
+      "time": "2:12pm"
+    },
+    {
+      "from": "Assandra Warren",
+      "subject": "incididunt ut labore et",
+      "text": "Duis aute irure dolor in reprehenderit",
+      "time": "1:47pm"
+    },
+    {
+      "from": "Miriam Cassidy",
+      "subject": "dolore magna aliqua",
+      "text": "in voluptate velit esse cillum dolore eu fugiat",
+      "time": "10:25am"
+    }
+  ]
+}
