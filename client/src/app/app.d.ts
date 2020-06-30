@@ -20,9 +20,14 @@ declare module 'app/menu/menu' {
 declare module 'app/app.screens' {
 	/***  Generated file, do not change.  */
 	import { MenuComponent } from 'app/menu/menu';
+	import { adminuserscreen_PhonePortrait } from 'app/../pages/adminuserscreen/PhonePortrait/adminuserscreen';
 	export class Screens {
 	    static declarations: typeof MenuComponent[];
-	    static mapping: {};
+	    static mapping: {
+	        'adminuserscreen': {
+	            PhonePortrait: typeof adminuserscreen_PhonePortrait;
+	        };
+	    };
 	}
 
 }
@@ -103,6 +108,21 @@ declare module 'app/app.hooks' {
 	     *          false - don't prompt the user, ignore the request
 	     */
 	    onSwitchSessionRequest(): boolean;
+	    /**
+	     * Intercept a request to the server.  Return the boolean true to
+	     * continue as normal, or false to indicate not to proceed with the normal flow.
+	     */
+	    interceptServerRequest(method: any, params: any, filesToUpload: any, context: any): Promise<boolean>;
+	    /**
+	    * Intercept a response from the server.  Return the boolean true to
+	    * continue as normal, or false to indicate not to proceed with the normal flow.
+	    */
+	    interceptServerResponse(method: any, params: any): Promise<boolean>;
+	    onOffline(isOffline: any): Promise<void>;
+	    /**
+	    * Determines if the app has the logic in order to be working offline
+	    */
+	    hasOfflineSupport(): boolean;
 	}
 
 }
