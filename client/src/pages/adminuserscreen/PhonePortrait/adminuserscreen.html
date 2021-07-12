@@ -1,0 +1,47 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1">
+        <button data-comp-id="button.1" icon-only="" ion-button="" menuToggle="">
+            <ion-icon class="ion-ios-menu" name="menu"></ion-icon>
+        </button>
+        <ion-buttons data-comp-id="buttons.1" left=""></ion-buttons>
+        <ion-title data-comp-id="title.1" text-center="">
+            <div data-comp-id="text.5" ion-text="">Messages</div>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.2" right="">
+            <button data-comp-id="button.2" icon-only="" ion-button=""
+                style="font-size: 17px;">
+                <ion-icon class="ion-ios-search"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-light" data-comp-id="content.1">
+    <ion-list class="list-container-white" data-comp-id="list.1">
+        <ion-row (click)="action('email[item].viewDetails', [i])"
+            *ngFor="let item of data.email;let i = index" class="row-white"
+            data-comp-id="row.1"
+            style="border-left: 0px; margin: 0px 0px 0px 15px; border-bottom: 1px solid  rgb(0,155,222, 0.5);">
+            <ion-col data-comp-id="column.1" style="padding: 10px 0px 10px 0;">
+                <div [innerHTML]="item.from" color="dark" data-comp-id="text.1" ion-text=""
+                    style="font-size: 16px; font-weight: normal; line-height: 24px;">Some text</div>
+                <div [innerHTML]="item.subject" color="primary" data-comp-id="text.2"
+                    ion-text="" style="font-size: 18px; line-height: 26px;">Some text</div>
+                <div [innerHTML]="item.text" data-comp-id="text.3" ion-text=""
+                    style="line-height: 24px;">Some text</div>
+            </ion-col>
+            <ion-col col-2="" data-comp-id="column.2"
+                style="text-align: center; padding: 10px 5px;">
+                <div [innerHTML]="item.time" color="dark" data-comp-id="text.4" ion-text=""
+                    style="font-size: 12px;">9:02pm</div>
+                <ion-icon class="ion-ios-attach" color="dark" data-comp-id="icon.1"
+                    style="font-size: 24px; margin: 10px;"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-list>
+    <ion-fab bottom="" data-comp-id="fab-group.1" right="">
+        <button (click)="action('add')" data-comp-id="fab-button.1" icon-only=""
+            ion-fab="">
+            <ion-icon class="fa fa-plus"></ion-icon>
+        </button>
+    </ion-fab>
+</ion-content>

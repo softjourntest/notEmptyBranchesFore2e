@@ -1,6 +1,13 @@
 {
   "id": "__BASE__",
   "name": "notemptybranchesfore2e",
-  "screens": [],
-  "startScreen": null
+  "screens": [
+    {
+      "id": "adminuserscreen",
+      "name": "Admin user screen",
+      "sourceScreenId": "Messages_MessageInbox",
+      "sourceAppId": "StrawberryTemplates"
+    }
+  ],
+  "startScreen": "adminuserscreen"
 }

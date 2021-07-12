@@ -3,5 +3,53 @@
     "type": "object",
     "properties": {},
     "id": "menu"
+  },
+  "adminuserscreen": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "email": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "subject": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "text": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "time": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "viewDetails": {
+              "type": "action"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
+      },
+      "add": {
+        "type": "action"
+      }
+    },
+    "id": "adminuserscreen"
   }
 }
