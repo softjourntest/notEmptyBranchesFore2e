@@ -4,5 +4,5 @@
  * @param {Vars} vars
 */
 exports.start = async (session, models, vars) => {
-    await session.screen('adminuserscreen');
+    await session.screen('testuserscreen');
 };

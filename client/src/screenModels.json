@@ -3,5 +3,11 @@
     "type": "object",
     "properties": {},
     "id": "menu"
+  },
+  "testuserscreen": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {},
+    "id": "testuserscreen"
   }
 }

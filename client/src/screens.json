@@ -1,6 +1,13 @@
 {
   "id": "__BASE__",
   "name": "notemptybranchesfore2e",
-  "screens": [],
-  "startScreen": null
+  "screens": [
+    {
+      "id": "testuserscreen",
+      "name": "Test user screen",
+      "sourceScreenId": "Forms_timeentry",
+      "sourceAppId": "StrawberryTemplates"
+    }
+  ],
+  "startScreen": "testuserscreen"
 }
